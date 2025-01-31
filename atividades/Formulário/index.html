@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário de Contato</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1>Formulário de Contato</h1>
+    </header>
+    
+    <main>
+        <h2>Nome Completo</h2>
+        <input type="text" class="input" name="Name" placeholder="Digite seu nome">
+        <h2>Email</h2>
+        <input type="email" class="input" name="email" placeholder="Digite seu email">
+        <h2>Telefone</h2>
+        <input type="tel" class="input" name="tel" placeholder="Digite seu telefone">
+        <h2>Mensagem</h2>
+        <textarea class="input" name="mensagem" placeholder="Digite sua mensagem"></textarea>
+        <br>
+        <br>
+
+        <fieldset>
+            <legend>Como prefere nosso contato?</legend>
+            <input type="radio" name="contato" id="Email"> 
+            <label for="Email">Email</label> <br>
+            <input type="radio" name="contato" id="Telefone">
+            <label for="Telefone">Telefone</label> <br>
+            <input type="radio" name="contato" id="Whatsapp">
+            <label for="Whatsapp">WhatsApp</label> <br>
+        </fieldset>
+        <br>
+
+        <fieldset>
+            <legend>Qual horário prefere?</legend>
+            <select class="horario">
+                <option value="Manha">Manhã</option>
+                <option value="Tarde">Tarde</option>
+                <option value="Noite">Noite</option>
+            </select>
+        </fieldset>
+        <br>
+        <input type="checkbox" name="novidades" id="novidades">
+        <label for="novidades">Gostaria de receber nossas novidades por email?</label>
+        <br>
+        <br>
+        <div class="envia-f">
+            <h2>Enviar Formulário</h2>
+        </div> 
+
+        <table>
+            <thead>
+                <tr>
+                    <th scope="col">Dia</th>
+                    <th scope="col">Horário</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th scope="row">Segunda</th>
+                    <td>08:00 - 17:00</td>
+                </tr>
+                <tr>
+                    <th scope="row">Terça</th>
+                    <td>08:00 - 17:00</td>
+                </tr>
+                <tr>
+                    <th scope="row">Quarta</th>
+                    <td>08:00 - 17:00</td>
+                </tr>
+                <tr>
+                    <th scope="row">Quinta</th>
+                    <td>08:00 - 17:00</td>
+                </tr>
+                <tr>
+                    <th scope="row">Sexta</th>
+                    <td>08:00 - 17:00</td>
+                </tr>   
+            </tbody>
+        </table>
+    </main>
+    
+    <footer>
+        <h2>Gabriella Santos Mendes | Prontuário: SP3141055</h2>
+    </footer>
+</body>
+</html>

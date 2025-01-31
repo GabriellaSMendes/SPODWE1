@@ -1,0 +1,104 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+header, footer {
+    padding: 2rem;
+    display: flex;
+    justify-content: center;
+    color: #fff;
+    background-color: #4CAF50; /* Verde */
+}
+
+main {
+    margin: 20px;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    margin-top: 10px;
+    color: #333;
+}
+
+.input {
+    width: 100%;
+    max-width: 400px;
+    height: 2.5rem;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+textarea.input {
+    height: 100px;
+    resize: vertical;
+}
+
+fieldset {
+    padding: 15px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 100%;
+    max-width: 400px;
+}
+
+select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.envia-f {
+    padding: 15px;
+    display: flex;
+    justify-content: center;
+    color: #fff;
+    background-color: #4CAF50; /* Verde */
+    width: 100%;
+    max-width: 400px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 20px 0;
+}
+
+.envia-f h2 {
+    margin: 0;
+}
+
+table {
+    width: 100%;
+    max-width: 400px;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+thead {
+    background-color: #4CAF50; /* Verde */
+    color: #fff;
+}
+
+td, th {
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: center;
+}
+
+input[type="radio"], input[type="checkbox"] {
+    margin-right: 10px;
+}
+
+label {
+    font-size: 16px;
+    color: #333;
+}
