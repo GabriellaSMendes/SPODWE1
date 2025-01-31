@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade 9</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f4f4f4;
+        }
+        .container {
+            text-align: center;
+        }
+        .box {
+            width: 200px;
+            height: 200px;
+            background-color: #4CAF50;
+            margin: 20px auto;
+        }
+        .controls {
+            margin-top: 20px;
+        }
+        label {
+            display: block;
+            margin: 10px 0 5px;
+        }
+        input {
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Visualizador de Border Radius</h1>
+        <div class="box" id="box"></div>
+        <div class="controls">
+            <label for="top-left">Top Left:</label>
+            <input type="range" id="top-left" min="0" max="100" value="0">
+            <label for="top-right">Top Right:</label>
+            <input type="range" id="top-right" min="0" max="100" value="0">
+            <label for="bottom-right">Bottom Right:</label>
+            <input type="range" id="bottom-right" min="0" max="100" value="0">
+            <label for="bottom-left">Bottom Left:</label>
+            <input type="range" id="bottom-left" min="0" max="100" value="0">
+        </div>
+    </div>
+
+    <script>
+        const box = document.getElementById('box');
+        const inputs = document.querySelectorAll('.controls input');
+
+        function updateBorderRadius() {
+            const topLeft = document.getElementById('top-left').value;
+            const topRight = document.getElementById('top-right').value;
+            const bottomRight = document.getElementById('bottom-right').value;
+            const bottomLeft = document.getElementById('bottom-left').value;
+
+            box.style.borderRadius = `${topLeft}% ${topRight}% ${bottomRight}% ${bottomLeft}%`;
+        }
+
+        inputs.forEach(input => input.addEventListener('input', updateBorderRadius));
+    </script>
+</body>
+</html>
